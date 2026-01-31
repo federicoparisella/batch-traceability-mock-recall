@@ -1,7 +1,6 @@
 import time
 import pandas as pd
-from traceability import trace_back, trace_forward
-
+from batch_traceability.traceability import trace_back, trace_forward
 
 def run_mock_recall(finished_lot_id: str):
     """

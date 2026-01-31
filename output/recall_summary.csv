@@ -1,2 +1,2 @@
 finished_lot_id,batch_id,recall_time_seconds,impacted_customers,total_quantity
-F500,B100,0.011,2,100
+F500,B100,0.015,2,100
