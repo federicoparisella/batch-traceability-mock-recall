@@ -1,22 +1,23 @@
-import sys
-from batch_traceability.recall import run_mock_recall, export_recall_report
+import argparse
+from batch_traceability.recall import run_mock_recall
 
 
 def main():
-    if len(sys.argv) != 2:
-        print("Usage: mock-recall <FINISHED_LOT_ID>")
-        sys.exit(1)
+    parser = argparse.ArgumentParser(
+        description="Mock recall simulation (one step back / one step forward)"
+    )
 
-    finished_lot_id = sys.argv[1]
+    parser.add_argument(
+        "finished_lot_id",
+        help="Finished product lot ID to recall (e.g. FG-LOT-001)"
+    )
 
-    report = run_mock_recall(finished_lot_id)
-    export_recall_report(report)
+    args = parser.parse_args()
 
-    print("Mock recall completed")
-    print(f"Batch: {report['batch_id']}")
-    print(f"Impacted customers: {report['impacted_customers']}")
-    print(f"Total quantity: {report['total_quantity']}")
+    report = run_mock_recall(args.finished_lot_id)
 
-
-if __name__ == "__main__":
-    main()
+    print("\n=== MOCK RECALL REPORT ===")
+    print(f"Finished lot: {args.finished_lot_id}")
+    print(f"Suppliers involved: {report['suppliers']}")
+    print(f"Customers impacted: {report['customers']}")
+    print(f"Total quantity recalled: {report['total_quantity']}")
