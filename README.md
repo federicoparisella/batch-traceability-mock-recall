@@ -1,3 +1,5 @@
+[![Python application](https://github.com/federicoparisella/batch-traceability-mock-recall/actions/workflows/python-app.yml/badge.svg)](https://github.com/federicoparisella/batch-traceability-mock-recall/actions/workflows/python-app.yml)
+
 \## Author \& Acknowledgment
 
 This project was developed by the repository owner.
