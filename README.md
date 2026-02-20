@@ -1,4 +1,4 @@
-[![Python application](https://github.com/federicoparisella/batch-traceability-mock-recall/actions/workflows/python-app.yml/badge.svg)](https://github.com/federicoparisella/batch-traceability-mock-recall/actions/workflows/python-app.yml)
+[![Python application](https://github.com/federicoparisella/batch-traceability-mock-recall/actions/workflows/python-app.yml/badge.svg)](https://github.com/federicoparisella/batch-traceability-mock-recall/actions) ![Mock Recall](https://img.shields.io/badge/Mock%20Recall-Ready-success) ![Python Version](https://img.shields.io/badge/python-3.9%20%7C%203.10%20%7C%203.11-blue) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) [![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)
 
 \## Author \& Acknowledgment
 
